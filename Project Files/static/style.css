@@ -1,79 +1,90 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f9;
-  color: #333;
+.tableauPlaceholder, .tableauViz,
+iframe {
+  width: 100% !important;
+  height: 950px !important;
+  border: none;
 }
 
-.navbar {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav.navbar {
+  background: #f2f2f2;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #1d3557;
-  padding: 15px 30px;
-  color: white;
   align-items: center;
 }
 
-.navbar h2 {
+nav h2 {
   margin: 0;
 }
 
-.navbar ul {
+nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
-.navbar a {
-  color: white;
+nav ul li a {
   text-decoration: none;
+  color: #333;
   font-weight: bold;
 }
 
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1601758123927-196d6eb2e6b4');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('/static/hero.jpg') no-repeat center center/cover;
   color: white;
   padding: 100px 20px;
   text-align: center;
 }
 
-.hero-content {
-  max-width: 700px;
-  margin: 0 auto;
-  background-color: rgba(0,0,0,0.5);
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.button {
-  background-color: #2a9d8f;
-  color: white;
+.hero .button {
+  background-color: green;
   padding: 10px 20px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.iframe-container {
-  margin-top: 20px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.footer {
-  background-color: #1d3557;
   color: white;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+./* Section Styling */
+.section {
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+footer {
   text-align: center;
   padding: 20px;
+  background: #f4f4f4;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
