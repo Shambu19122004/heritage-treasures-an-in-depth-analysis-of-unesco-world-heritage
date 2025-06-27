@@ -13,8 +13,10 @@
     <ul>
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#dashboard">Dashboard</a></li>
-      <li><a href="#storyboard">Storyboard</a></li>
+      <li><a href="#dashboard1">Dashboard 1</a></li>
+      <li><a href="#dashboard2">Dashboard 2</a></li>
+      <li><a href="#story1">Story 1</a></li>
+      <li><a href="#story2">Story 2</a></li>
     </ul>
   </nav>
 
@@ -26,69 +28,113 @@
         Explore the cultural and natural wonders of the world through data.
         This project provides insight into UNESCO World Heritage Sites across regions and categories.
       </p>
-      <a href="#dashboard" class="button">Read More</a>
+      <a href="#dashboard1" class="button">Read More</a>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About the Project</h2>
-    <p>
-      This data visualization project analyzes UNESCO World Heritage Sites based on region, type, endangered status, and more.
-      It uses Tableau for dashboards and stories, embedded in this interactive web interface.
-    </p>
-  </section>
+<section id="about" class="section" style="padding: 40px; background-color: #f8f8f8;">
+  <h2 style="text-align: center;">About the Project</h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">
+    <div style="flex: 1; min-width: 300px; padding: 20px;">
+      <p>
+        <strong>Heritage Treasures: An In-depth Analysis of UNESCO World Heritage Sites</strong> is an interactive data visualization project developed using <b>Tableau</b> and <b>Flask</b>. 
+        The goal is to provide insights into the global distribution, categorization, and preservation status of world heritage sites.
+      </p>
+      <p>
+        🌍 <strong>Global Reach:</strong> The dataset spans cultural, natural, and mixed heritage sites across every inhabited continent.
+        <br>📊 <strong>Visualization:</strong> Dashboards reveal country-wise site counts, endangered site analysis, and category-wise trends.
+        <br>📅 <strong>Historical Insights:</strong> Explore how UNESCO listings evolved over time.
+        <br>🛠️ <strong>Technology Stack:</strong> Built with Tableau for analytics, Flask for integration, and hosted on Render.
+      </p>
+      <p>
+        The project promotes awareness of global heritage conservation and offers a clean, educational interface for exploration.
+      </p>
+    </div>
+    <div style="flex: 1; min-width: 300px; padding: 20px; text-align: center;">
+      <img src="{{ url_for('static', filename='about-heritage.jpg') }}" alt="UNESCO Heritage Sites" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    </div>
+  </div>
+</section>
 
-  <!-- Dashboard Section -->
-   <section id="dashboard1" style="padding: 30px;">
+
+  <!-- Dashboard 1 -->
+  <section id="dashboard1" style="padding: 30px;">
     <h2 style="text-align:center;">🌍 Dashboard 1 - Global Overview</h2>
-    <iframe
-      src="https://public.tableau.com/views/dashboard1_17510154959140/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
-      width="100%"
-      height="800"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+    <div class='tableauPlaceholder' id='viz1'>
+      <noscript><a href='#'>
+        <img alt='Dashboard 1' src='https://public.tableau.com/static/images/da/dashboard1_17510154959140/Dashboard1/1_rss.png' style='border: none' />
+      </a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='dashboard1_17510154959140/Dashboard1' />
+        <param name='toolbar' value='yes' />
+        <param name='tabs' value='no' />
+      </object>
+    </div>
   </section>
 
   <!-- Dashboard 2 -->
   <section id="dashboard2" style="padding: 30px;">
     <h2 style="text-align:center;">🌐 Dashboard 2 - Endangered Sites & Trends</h2>
-    <iframe
-      src="https://public.tableau.com/views/dashboard2_17510155672150/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link"
-      width="100%"
-      height="800"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+    <div class='tableauPlaceholder' id='viz2'>
+      <noscript><a href='#'>
+        <img alt='Dashboard 2' src='https://public.tableau.com/static/images/da/dashboard2_17510155672150/Dashboard2/1_rss.png' style='border: none' />
+      </a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='dashboard2_17510155672150/Dashboard2' />
+        <param name='toolbar' value='yes' />
+        <param name='tabs' value='no' />
+      </object>
+    </div>
   </section>
 
   <!-- Story 1 -->
   <section id="story1" style="padding: 30px;">
     <h2 style="text-align:center;">📖 Story 1 - Heritage Site Categories</h2>
-    <iframe
-      src="https://public.tableau.com/views/UNESCO_Story/Story1?:language=en-US&:display_count=n&:origin=viz_share_link"
-      width="100%"
-      height="900"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+    <div class='tableauPlaceholder' id='viz3'>
+      <noscript><a href='#'>
+        <img alt='Story 1' src='https://public.tableau.com/static/images/UN/UNESCO_Story/Story1/1_rss.png' style='border: none' />
+      </a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='UNESCO_Story/Story1' />
+        <param name='toolbar' value='yes' />
+        <param name='tabs' value='no' />
+      </object>
+    </div>
   </section>
 
   <!-- Story 2 -->
   <section id="story2" style="padding: 30px;">
     <h2 style="text-align:center;">📘 Story 2 - Timeline and Regional Trends</h2>
-    <iframe
-      src="https://public.tableau.com/views/UNESCO_Story1/Story2?:language=en-US&:display_count=n&:origin=viz_share_link"
-      width="100%"
-      height="900"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+    <div class='tableauPlaceholder' id='viz4'>
+      <noscript><a href='#'>
+        <img alt='Story 2' src='https://public.tableau.com/static/images/UN/UNESCO_Story1/Story2/1_rss.png' style='border: none' />
+      </a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='UNESCO_Story1/Story2' />
+        <param name='toolbar' value='yes' />
+        <param name='tabs' value='no' />
+      </object>
+    </div>
   </section>
+
+  <!-- Tableau JS Script (needed only once at bottom) -->
+  <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
 
   <footer style="text-align:center; padding:20px; background:#f4f4f4;">
     <p>&copy; 2025 UNESCO Heritage Analysis | Made with Flask & Tableau</p>
   </footer>
+
 </body>
 </html>
+
+ 
+ 
