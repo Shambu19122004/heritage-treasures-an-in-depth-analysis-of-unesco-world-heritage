@@ -1,105 +1,112 @@
-🌍 Heritage Treasures: An In-Depth Analysis of UNESCO World Heritage Sites
+# 🌍 Heritage Treasures: An In-Depth Analysis of UNESCO World Heritage Sites
 
+[![Live Site](https://img.shields.io/badge/View%20Live-Render.com-blue)](https://heritage-treasures-an-in-depth-analysis-fyzx.onrender.com)  
+[![Repo Size](https://img.shields.io/github/repo-size/Shambu19122004/heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage)](https://github.com/Shambu19122004/heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage)
 
-📌 Project Overview
-Heritage Treasures is a data analytics and visualization project that provides a comprehensive analysis of UNESCO World Heritage Sites across the globe.
-It explores site distribution, endangered sites, regional trends, and more using Tableau dashboards and stories integrated into a Flask web app.
+---
 
-The project helps users interactively explore:
+## 📌 Project Overview
 
-🌐 The spread of heritage sites by type and region
+**Heritage Treasures** is a data-driven exploration of UNESCO World Heritage Sites worldwide. By integrating **Tableau dashboards and storyboards** into a Flask-based web app, this project provides interactive insights into site distribution, endangered status, age trends, and more. Hosted on **Render.com** for public access.
 
-⚠️ Sites at risk (endangered)
+---
 
-📈 Timeline trends and forecasting
+## 🚀 Live Demo
 
-The app is deployed on Render.com and accessible online.
+👉 [Explore the live site](https://heritage-treasures-an-in-depth-analysis-fyzx.onrender.com)
 
-🚀 Live Demo
-👉 Visit the live site
+---
 
-🎯 Key Features
-✅ Two fully interactive Tableau dashboards embedded in a web app
-✅ Two Tableau stories presenting narrative-driven insights
-✅ Responsive and clean UI built with HTML/CSS/Flask
-✅ Render.com deployment for public access
+## 🎯 Key Features
 
-🗂 Project Structure
-php
-Copy
-Edit
+- **🗺️ Dashboard 1: Global Overview** – Heritage site distribution by region & type  
+- **⚠️ Dashboard 2: Endangered Sites & Trends** – Analysis of at-risk heritage sites  
+- **📘 Storyboard 1: Heritage Site Categories** – Narrative insights by category  
+- **📖 Storyboard 2: Timeline & Regional Trends** – Historical evolution and forecasting  
+- **✅ Responsive UI** using HTML, CSS, Flask, and Jinja2  
+- **🌐 Public deployment** via Render.com for seamless access
+
+---
+
+## 🗂 Project Structure
+
+```text
 heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage/
 │
 ├── project-files/
-│   ├── app.py                # Flask app
+│   ├── app.py                # Flask application
 │   ├── templates/
-│   │   └── index.html         # Main HTML page
+│   │   └── index.html        # Main web interface
 │   ├── static/
-│   │   └── style.css          # Custom styles
-│   └── requirements.txt       # Dependencies
+│   │   ├── style.css         # Custom styles
+│   │   └── images/           # Hero & landscape images
+│   │       └── landscape-about.jpg
+│   └── requirements.txt      # Python dependencies
 │
-├── README.md                  # This file
-└── (optional: video/, docs/)   # Placeholder for additional assets
-⚙️ Installation Instructions
-1️⃣ Clone the repository:
+├── README.md                 # Project documentation
+└── (optional: video/, docs/) # For extra assets or reports
+```
+⚙️ Setup & Installation
+```
+🔧 1. Clone the Repository
 
-bash
-Copy
-Edit
 git clone https://github.com/Shambu19122004/heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage.git
 cd heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage/project-files
-2️⃣ Create and activate a virtual environment:
-
-bash
-Copy
-Edit
+```
+🧰 2. Create a Virtual Environment
+```
 python -m venv venv
-source venv/bin/activate   # On Windows: .\venv\Scripts\activate
-3️⃣ Install dependencies:
-
-bash
-Copy
-Edit
+source venv/bin/activate    # Use .\venv\Scripts\activate on Windows
+```
+📦 3. Install Dependencies
+```
 pip install -r requirements.txt
-4️⃣ Run the Flask app locally:
+```
+▶️ 4. Run the App
+```
 
-bash
-Copy
-Edit
 python app.py
-👉 Visit: http://127.0.0.1:5000/
-⚠️ Note: Tableau dashboards may not load fully in localhost. Use the deployed site for complete access.
+Visit: http://127.0.0.1:5000/
 
+⚠️ Note: Tableau visualizations may not load locally due to embedding restrictions—please use the deployed link for full functionality.
+```
 📊 Embedded Tableau Visualizations
-Type	Link
-Dashboard 1	Global Overview Dashboard
-Dashboard 2	Endangered Sites Dashboard
-Story 1	Heritage Site Categories Story
-Story 2	Timeline and Regional Trends Story
+```
+Visualization Type	Link
+Dashboard 1	Global Overview
+Dashboard 2	Endangered Sites & Trends
+Storyboard 1	Heritage Site Categories
+Storyboard 2	Timeline & Regional Trends
+```
+🌐 Technology Stack
+Backend: Python & Flask
 
-🌐 Technologies Used
-Python (Flask)
+Visualization: Tableau Public
 
-HTML5 / CSS3
+Frontend: HTML5, CSS3, Jinja2 templates
 
-Tableau Public
+Deployment: Render.com
 
-Render.com (deployment)
+Version Control: GitHub
 
-📷 Screenshots
-![image](https://github.com/user-attachments/assets/e1b56803-2023-4070-b149-5ec246acd2e9)
-![image](https://github.com/user-attachments/assets/7b80cbd4-7d33-4678-93bf-1911e9b72ed9)
+##📷 Screenshots
 
+![image](https://github.com/user-attachments/assets/d188bf6e-c315-4d56-b27c-55077315c97d)
 
-
-📌 Contributing
-This project is open for feedback and improvements. Please create an issue or a pull request if you’d like to contribute.
-🙏 Acknowledgements
-UNESCO for making the dataset publicly available.
-
-SmartInternz & APSCHE for the guided project format.
-
-Render.com for free Flask app hosting.
+![image](https://github.com/user-attachments/assets/ce7928a2-a55d-41e0-9d0c-5ed9dccdfd6d)
 
 
 
+🤝 Contributing
+
+Contributions are welcome! 🎉 If you'd like to contribute, please open an issue or submit a pull request with details of what you’d like to add or improve.
+
+📄 License & Acknowledgements
+
+This project is intended for educational and analytical purposes.
+
+Dataset: UNESCO World Heritage Sites (Kaggle)
+
+Deployment: Thanks to Render.com for hosting
+
+Author: Gurramkonda Shambupriya 2005
