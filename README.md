@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ba594546-cdd9-4368-87fd-e1b4bd246806)🌍 Heritage Treasures: An In-Depth Analysis of UNESCO World Heritage Sites
+🌍 Heritage Treasures: An In-Depth Analysis of UNESCO World Heritage Sites
 
 
 📌 Project Overview
