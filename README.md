@@ -1,130 +1,105 @@
-🌍 Heritage Treasures: An In-depth Analysis of UNESCO World Heritage Sites
+![image](https://github.com/user-attachments/assets/ba594546-cdd9-4368-87fd-e1b4bd246806)🌍 Heritage Treasures: An In-Depth Analysis of UNESCO World Heritage Sites
+
 
 📌 Project Overview
+Heritage Treasures is a data analytics and visualization project that provides a comprehensive analysis of UNESCO World Heritage Sites across the globe.
+It explores site distribution, endangered sites, regional trends, and more using Tableau dashboards and stories integrated into a Flask web app.
 
-"Heritage Treasures" is an insightful data analytics project that explores and visualizes the global distribution, trends, and threats to UNESCO World Heritage Sites. Through the integration of Tableau visualizations and a Flask-based interactive web app, this project empowers users to explore the historical, cultural, and environmental significance of heritage sites across the world.
+The project helps users interactively explore:
 
-🎯 Objectives
+🌐 The spread of heritage sites by type and region
 
-To visualize the count and distribution of UNESCO World Heritage Sites by country and region.
+⚠️ Sites at risk (endangered)
 
-To analyze trends over time including newly added and endangered sites.
+📈 Timeline trends and forecasting
 
-To identify top endangered heritage sites and forecast future trends.
+The app is deployed on Render.com and accessible online.
 
-To present the analysis in an engaging and interactive web interface.
+🚀 Live Demo
+👉 Visit the live site
 
-🧩 Features
+🎯 Key Features
+✅ Two fully interactive Tableau dashboards embedded in a web app
+✅ Two Tableau stories presenting narrative-driven insights
+✅ Responsive and clean UI built with HTML/CSS/Flask
+✅ Render.com deployment for public access
 
-📊 Interactive Tableau Dashboards embedded via Flask
-
-🗺️ Regional analysis of heritage site types (Cultural, Natural, Mixed)
-
-⚠️ Endangered sites analysis with geospatial visuals
-
-🧾 Story-driven narrative through Tableau Storyboards
-
-🌐 Fully deployed Flask website using Render.com
-
-🔗 Live Demo
-
-Website: Heritage Treasures Live
-
-Dashboards and Stories Embedded:
-
-Dashboard 1: Global Overview
-
-Dashboard 2: Endangered Sites & Trends
-
-Story 1: Heritage Site Categories
-
-Story 2: Timeline and Regional Trends
-
-🛠️ Tech Stack
-
-Frontend: HTML5, CSS3, Bootstrap (via static files)
-
-Backend: Python 3.13, Flask
-
-Data Visualization: Tableau Public
-
-Deployment: Render.com
-
-Version Control: Git & GitHub
-
-🗂️ Repository Structure
-
-heritage-treasures/
-├── Project Files/
-│   ├── app.py
+🗂 Project Structure
+php
+Copy
+Edit
+heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage/
+│
+├── project-files/
+│   ├── app.py                # Flask app
 │   ├── templates/
-│   │   └── index.html
+│   │   └── index.html         # Main HTML page
 │   ├── static/
-│   │   ├── style.css
-│   │   └── images/
-│   │       └── hero.jpg
-│   └── README.md
-├── Data/
-│   └── whc-sites-2019-cleaned.csv
-├── Video/
-│   └── TableauFlask.mp4 (optional)
-├── Documentation/
-│   └── Final_Report.pdf (to be added)
+│   │   └── style.css          # Custom styles
+│   └── requirements.txt       # Dependencies
+│
+├── README.md                  # This file
+└── (optional: video/, docs/)   # Placeholder for additional assets
+⚙️ Installation Instructions
+1️⃣ Clone the repository:
 
-🚀 Installation & Running Locally
+bash
+Copy
+Edit
+git clone https://github.com/Shambu19122004/heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage.git
+cd heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage/project-files
+2️⃣ Create and activate a virtual environment:
 
-# Clone the repo
-$ git clone https://github.com/Shambu19122004/heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage
-$ cd heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage/Project\ Files
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate   # On Windows: .\venv\Scripts\activate
+3️⃣ Install dependencies:
 
-# Create virtual environment
-$ python -m venv venv
-$ source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4️⃣ Run the Flask app locally:
 
-# Install dependencies
-$ pip install -r requirements.txt
+bash
+Copy
+Edit
+python app.py
+👉 Visit: http://127.0.0.1:5000/
+⚠️ Note: Tableau dashboards may not load fully in localhost. Use the deployed site for complete access.
 
-# Run the Flask app
-$ python app.py
+📊 Embedded Tableau Visualizations
+Type	Link
+Dashboard 1	Global Overview Dashboard
+Dashboard 2	Endangered Sites Dashboard
+Story 1	Heritage Site Categories Story
+Story 2	Timeline and Regional Trends Story
 
-# Open in browser
-Visit http://127.0.0.1:5000
+🌐 Technologies Used
+Python (Flask)
 
-Note: Tableau Public links may not render in localhost due to embed restrictions. Use the deployed URL.
+HTML5 / CSS3
 
-🧪 Performance Testing (Optional)
+Tableau Public
 
-Though the site is optimized for deployment, you can optionally test responsiveness using tools like:
+Render.com (deployment)
 
-Lighthouse (Chrome DevTools)
+📷 Screenshots
+![image](https://github.com/user-attachments/assets/e1b56803-2023-4070-b149-5ec246acd2e9)
+![image](https://github.com/user-attachments/assets/7b80cbd4-7d33-4678-93bf-1911e9b72ed9)
 
-PageSpeed Insights
 
-Mobile Viewports & Load Times
 
-📄 Documentation
+📌 Contributing
+This project is open for feedback and improvements. Please create an issue or a pull request if you’d like to contribute.
+🙏 Acknowledgements
+UNESCO for making the dataset publicly available.
 
-Comprehensive documentation will be available in the Documentation folder soon, including:
+SmartInternz & APSCHE for the guided project format.
 
-Data Cleaning steps
+Render.com for free Flask app hosting.
 
-Tableau visual design rationale
 
-Web integration steps
-
-Deployment checklist
-
-🎥 Project Demo Video
-
-To be added under the Video folder and optionally linked on the web app UI.
-
-🧠 Credits & Contributors
-
-This project was created as part of a guided internship program. Contributions from mentors and team members are acknowledged.
-
-📜 License
-
-This project is open source and free to use for educational purposes.
-
-For questions or improvements, please raise an issue or contact via GitHub Issues
 
