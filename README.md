@@ -1,148 +1,130 @@
-# heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage
+🌍 Heritage Treasures: An In-depth Analysis of UNESCO World Heritage Sites
 
+📌 Project Overview
 
----
+"Heritage Treasures" is an insightful data analytics project that explores and visualizes the global distribution, trends, and threats to UNESCO World Heritage Sites. Through the integration of Tableau visualizations and a Flask-based interactive web app, this project empowers users to explore the historical, cultural, and environmental significance of heritage sites across the world.
 
-```markdown
-# 🌍 Heritage Treasures: An In-depth Analysis of UNESCO World Heritage Sites
+🎯 Objectives
 
-This project explores the global distribution, categorization, and risk status of UNESCO World Heritage Sites using interactive data visualizations and dashboards built in Tableau and integrated into a Flask web application.
+To visualize the count and distribution of UNESCO World Heritage Sites by country and region.
 
-## 🔗 Live Site
+To analyze trends over time including newly added and endangered sites.
 
-👉 [Visit the Project Website](https://heritage-treasures-an-in-depth-analysis-fyzx.onrender.com)
+To identify top endangered heritage sites and forecast future trends.
 
-## 📽️ Video Explanation
+To present the analysis in an engaging and interactive web interface.
 
-🎬 *Coming Soon* – A walkthrough video explaining the project end-to-end.
+🧩 Features
 
----
+📊 Interactive Tableau Dashboards embedded via Flask
 
-## 📌 Table of Contents
+🗺️ Regional analysis of heritage site types (Cultural, Natural, Mixed)
 
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Data Source](#data-source)
-- [Technologies Used](#technologies-used)
-- [Setup Instructions](#setup-instructions)
-- [Screenshots](#screenshots)
-- [Acknowledgements](#acknowledgements)
+⚠️ Endangered sites analysis with geospatial visuals
 
----
+🧾 Story-driven narrative through Tableau Storyboards
 
-## 🧭 Overview
+🌐 Fully deployed Flask website using Render.com
 
-This project presents a complete analytics pipeline:
-- Data cleaning and preparation using the UNESCO World Heritage dataset.
-- Multiple visualizations created in Tableau Public.
-- Dashboards and storyboards covering heritage types, danger status, site age, and geographical trends.
-- A Flask-powered interactive website that embeds all Tableau content seamlessly.
+🔗 Live Demo
 
----
+Website: Heritage Treasures Live
 
-## 📁 Project Structure
+Dashboards and Stories Embedded:
 
-```
+Dashboard 1: Global Overview
 
-heritage-treasures-an-in-depth-analysis/
-│
+Dashboard 2: Endangered Sites & Trends
+
+Story 1: Heritage Site Categories
+
+Story 2: Timeline and Regional Trends
+
+🛠️ Tech Stack
+
+Frontend: HTML5, CSS3, Bootstrap (via static files)
+
+Backend: Python 3.13, Flask
+
+Data Visualization: Tableau Public
+
+Deployment: Render.com
+
+Version Control: Git & GitHub
+
+🗂️ Repository Structure
+
+heritage-treasures/
 ├── Project Files/
-│   ├── app.py                  # Flask backend
+│   ├── app.py
 │   ├── templates/
-│   │   └── index.html          # Main HTML page with embedded dashboards/stories
-│   └── static/
-│       ├── style.css           # CSS styles
-│       └── images/             # Hero and landscape images
-│
-├── Documentation/
-│   ├── Project\_Report.pdf      # Final documentation (as per templates)
-│
+│   │   └── index.html
+│   ├── static/
+│   │   ├── style.css
+│   │   └── images/
+│   │       └── hero.jpg
+│   └── README.md
+├── Data/
+│   └── whc-sites-2019-cleaned.csv
 ├── Video/
-│   └── TableauFlask.mp4        # Video explanation (to be added)
-│
-└── README.md                   # This file
+│   └── TableauFlask.mp4 (optional)
+├── Documentation/
+│   └── Final_Report.pdf (to be added)
 
-````
+🚀 Installation & Running Locally
 
----
+# Clone the repo
+$ git clone https://github.com/Shambu19122004/heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage
+$ cd heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage/Project\ Files
 
-## 📊 Features
+# Create virtual environment
+$ python -m venv venv
+$ source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 
-✅ Cleaned dataset using key UNESCO heritage metadata  
-✅ 8+ Tableau visualizations (pie charts, maps, bar graphs, forecasting, etc.)  
-✅ 2 Tableau dashboards covering overall site analysis and endangered trends  
-✅ 2 Tableau storyboards explaining key insights interactively  
-✅ Responsive Flask web interface for viewing dashboards/stories  
-✅ Deployed using Render.com
+# Install dependencies
+$ pip install -r requirements.txt
 
----
+# Run the Flask app
+$ python app.py
 
-## 📂 Data Source
+# Open in browser
+Visit http://127.0.0.1:5000
 
-- **Dataset**: [UNESCO World Heritage Sites (Kaggle)](https://www.kaggle.com/datasets/ujwalkandi/unesco-world-heritage-sites)
-- Columns include: `ID No.`, `Name`, `Country`, `Region`, `Category`, `Danger`, `Endangered Year`, `Date Inscribed`, etc.
+Note: Tableau Public links may not render in localhost due to embed restrictions. Use the deployed URL.
 
----
+🧪 Performance Testing (Optional)
 
-## 🛠️ Technologies Used
+Though the site is optimized for deployment, you can optionally test responsiveness using tools like:
 
-| Component       | Technology                     |
-|----------------|----------------------------------|
-| Web Framework   | Flask (Python)                  |
-| Data Visualization | Tableau Public              |
-| Frontend        | HTML, CSS                       |
-| Deployment      | Render.com                      |
-| Version Control | Git & GitHub                    |
+Lighthouse (Chrome DevTools)
 
----
+PageSpeed Insights
 
-## 🚀 Setup Instructions (for local run)
+Mobile Viewports & Load Times
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Shambu19122004/heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage.git
-   cd heritage-treasures-an-in-depth-analysis-of-unesco-world-heritage
-````
+📄 Documentation
 
-2. Create a virtual environment and install dependencies:
+Comprehensive documentation will be available in the Documentation folder soon, including:
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # or venv\Scripts\activate on Windows
-   pip install -r requirements.txt
-   ```
+Data Cleaning steps
 
-3. Run the Flask app:
+Tableau visual design rationale
 
-   ```bash
-   python Project\ Files/app.py
-   ```
+Web integration steps
 
-4. Open your browser at: `http://127.0.0.1:5000`
+Deployment checklist
 
-> ⚠️ Note: Tableau Public dashboards may not display in local development due to CORS issues. Use the deployed link for full functionality.
+🎥 Project Demo Video
 
----
+To be added under the Video folder and optionally linked on the web app UI.
 
-## 🖼️ Screenshots
+🧠 Credits & Contributors
 
-### 🌍 Dashboard 1 – Global Overview
+This project was created as part of a guided internship program. Contributions from mentors and team members are acknowledged.
 
-![Dashboard1](https://public.tableau.com/static/images/da/dashboard1_17510154959140/Dashboard1/1.png)
+📜 License
 
-### 📘 Story 2 – Timeline & Regional Trends
+This project is open source and free to use for educational purposes.
 
-![Story2](https://public.tableau.com/static/images/UNESCO_Story1/Story2/1.png)
-
----
-
-## 🙏 Acknowledgements
-
-* **UNESCO** for making the dataset publicly available.
-* **SmartInternz & APSCHE** for the guided project format.
-* **Render.com** for free Flask app hosting.
-
----
-
+For questions or improvements, please raise an issue or contact via GitHub Issues
 
